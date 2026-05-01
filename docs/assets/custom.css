@@ -1,0 +1,115 @@
+/* Custom styles for Patient Advocacy Training Site */
+
+:root {
+  --md-primary-fg-color: #00796B;
+  --md-accent-fg-color: #FF5722;
+}
+
+/* Hero banner on home page */
+.hero-banner {
+  background: linear-gradient(135deg, #00796B 0%, #004D40 60%, #1A237E 100%);
+  color: white;
+  padding: 3rem 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.hero-banner h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.hero-banner p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Stack level cards */
+.stack-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.stack-card {
+  border-left: 5px solid var(--md-primary-fg-color);
+  background: var(--md-code-bg-color);
+  padding: 1rem 1.2rem;
+  border-radius: 4px;
+}
+
+.stack-card .level-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  opacity: 0.6;
+  margin-bottom: 0.2rem;
+}
+
+.stack-card h4 {
+  margin: 0 0 0.4rem;
+  font-size: 1rem;
+}
+
+/* Quote callout */
+.patient-voice {
+  border-left: 4px solid #FF5722;
+  background: rgba(255, 87, 34, 0.08);
+  padding: 1rem 1.4rem;
+  border-radius: 0 4px 4px 0;
+  font-style: italic;
+  margin: 1.5rem 0;
+}
+
+.patient-voice cite {
+  display: block;
+  margin-top: 0.5rem;
+  font-style: normal;
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+/* Module cards on home page */
+.module-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.2rem;
+  margin: 1.5rem 0;
+}
+
+.module-card {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 8px;
+  padding: 1.2rem;
+  transition: box-shadow 0.2s;
+}
+
+.module-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.module-card .icon {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.module-card h3 {
+  margin: 0 0 0.4rem;
+  font-size: 1rem;
+}
+
+/* Scorecard table */
+.scorecard-table {
+  font-size: 0.88rem;
+}
+
+.score-ideal { background: rgba(0, 150, 100, 0.15); }
+.score-great { background: rgba(0, 150, 100, 0.08); }
+.score-acceptable { background: rgba(255, 193, 7, 0.10); }
+.score-minimal { background: rgba(255, 87, 34, 0.10); }
+.score-none { background: rgba(244, 67, 54, 0.12); }

@@ -1,0 +1,69 @@
+site_name: "Patient Advocacy & Engagement in Informatics"
+site_description: "A training resource for informatics students on patient advocacy, engagement, and health data systems"
+site_author: "Informatics Training Program"
+docs_dir: docs
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: teal
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: teal
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.copy
+  icon:
+    logo: material/hospital-box
+
+extra_css:
+  - assets/custom.css
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - "Informatics Stack Framework":
+    - "Overview": modules/informatics-stack.md
+    - "Applying the Stack to Advocacy": modules/stack-application.md
+  - "Informatics in Clinical Care":
+    - "EHRs & Clinical Systems": modules/clinical-informatics.md
+    - "Wearables & Consumer Devices": modules/wearables.md
+  - "Patient Advocacy Groups":
+    - "PAGs and Patient Registries": modules/pag-registries.md
+    - "REMS & HL7 CodeX": modules/codex-rems.md
+  - "Regulation & Policy":
+    - "21st Century Cures Act": modules/cures-act.md
+    - "PCORI & Patient-Led Research": modules/pcori.md
+  - "Success Stories":
+    - "ALS Community": modules/als-stories.md
+    - "Rare Epilepsy Community": modules/epilepsy-stories.md
+  - "Evaluation Tools":
+    - "CMSS/PLRC Scorecards": modules/cmss-scorecards.md
+  - "Learning Activities": modules/activities.md
